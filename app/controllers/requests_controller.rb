@@ -22,8 +22,8 @@ class RequestsController < ApplicationController
       @request.user.update_waiting!
       redirect_to after_create_page, flash: { success: create_success_message }
     else
-      #flash[:error] ="error" # I18n.t! "flash.request.empty"
-      #render :new
+      flash[:error] ="error" # I18n.t! "flash.request.empty"
+      render :new
     end
   end
 
