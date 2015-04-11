@@ -23,12 +23,17 @@
             {label: "For Volunteer"}
 
         .form-group
+<<<<<<< HEAD
         %label Time Off Request
         = i.date_field :text, rows: 1, label: "Start Date (MM/DD/YYYY)"
+=======
+        %label Supplies
+        = i.text_area :text, rows: 1, label: "Start Date (MM/DD/YYYY)"
+>>>>>>> parent of 48fc601... Update new.html.haml
         = i.text_area :text, rows: 1, label: "End Date (MM/DD/YYYY)"
 
         = i.text_area :text, rows: 3, label: "Desination(s) (City and Country)"
-        = i.text_area :text, rows: 1, label: "E-Signature (Type Your Full Name Below)"
+        = i.text_area :text, rows: 1, label: "E-Signature (type your full name below)"
         %button.btn.btn-primary(type="submit") Submit
 
 :javascript
