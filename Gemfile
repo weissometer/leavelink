@@ -4,6 +4,7 @@ ruby '2.1.4'
 
 gem 'rails', '4.1.1'
 
+gem 'therubyracer'
 gem 'jquery-rails'
 gem 'haml-rails'
 gem 'twilio-ruby'
