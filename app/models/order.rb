@@ -2,6 +2,7 @@ class Order < ActiveRecord::Base
   include Concerns::UserScope
 
   belongs_to :supply
+  belongs_to :request
   belongs_to :response
 
   validates_presence_of :supply, :request
