@@ -1,7 +1,6 @@
 en:
   flash:
     request:
-      empty: "Your order was empty. Please select at least one supply."
       placed: "Success! Your order has been sent."
       placed_for: "Success! The order you placed on behalf of %{username} has been sent."
 

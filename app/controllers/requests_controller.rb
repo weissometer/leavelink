@@ -31,7 +31,7 @@ class RequestsController < ApplicationController
 
   def create_params
     p = params.require(:request).permit :user_id, :text,
-      orders_attributes: [:supply_id]
+      
     p
   end
 
