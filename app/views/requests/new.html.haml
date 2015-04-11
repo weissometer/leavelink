@@ -23,9 +23,24 @@
             {label: "For Volunteer"}
 
         .form-group
+<<<<<<< HEAD
         %label Time Off Request
         = i.text_area :text, rows: 1, label: "Start Date (MM/DD/YYYY)"
         = i.text_area :text, rows: 1, label: "End Date (MM/DD/YYYY)"
+=======
+          %label Supplies
+          = f.fields_for :orders do |order_form|
+            = order_form.select :supply_id,
+              (Supply.choices_for active_country_id),
+              {include_blank: true},
+              {class: 'form-control supply-select'}
+          = f.link_to_add :orders,
+            id:    "add-supply",
+            style: "display:none" do
+            = icon :plus
+
+        = i.text_area :text, rows: 3, label: "Special Instructions"
+>>>>>>> parent of e1fe3b9... Update new.html.haml
 
         = i.text_area :text, rows: 3, label: "Desination(s) (City and Country)"
         = i.text_area :text, rows: 1, label: "E-Signature (Type Your Full Name Below)"
