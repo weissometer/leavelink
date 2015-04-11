@@ -23,16 +23,9 @@
             {label: "For Volunteer"}
 
         .form-group
-          %label Supplies
-          = f.fields_for :orders do |order_form|
-            = order_form.select :supply_id,
-              (Supply.choices_for active_country_id),
-              {include_blank: true},
-              {class: 'form-control supply-select'}
-          = f.link_to_add :orders,
-            id:    "add-supply",
-            style: "display:none" do
-            = icon :plus
+          %label Dates of Time Off
+          = i.text_area :text, rows: 1, label: "Start Date"
+          = i.text_area :text, rows: 1, label: "End Date"
 
         = i.text_area :text, rows: 3, label: "Special Instructions"
 
