@@ -12,7 +12,7 @@
     = javascript_include_tag "application"
     %script{:src=>"//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"}
 
-    %title= content_for?(:title) ? yield(:title) : "PC Medlink"
+    %title= content_for?(:title) ? yield(:title) : "PC Leavelink"
     = csrf_meta_tags
 
     - %w( Droid+Sans:400,700 Droid+Serif Boogaloo Economica:700,400italic ).each do |font|
